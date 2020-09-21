@@ -6,7 +6,7 @@
 
 html {
   color: #555;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto Mono, monospace;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
@@ -15,6 +15,7 @@ html {
 .row {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* ME */
@@ -38,7 +39,6 @@ html {
   background-size: cover;
   padding-top: 90px;
   color: #fff;
-  font-family: Roboto Mono, monospace;
 }
 
 .intro img {
@@ -91,104 +91,38 @@ html {
   color: #fff !important;
 }
 
-/* HEADER */
-
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.705)),
-    url(img/me.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+.hello {
+  padding: 60px 0;
 }
 
-.hero-text-box {
-  position: absolute;
-  width: 1140px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.logo {
-  height: 100px;
-  width: auto;
-  float: left;
-  margin-top: 20px;
-}
-
-.main-nav {
-  float: right;
-  list-style: none;
-  margin-top: 55px;
-}
-
-.main-nav li {
-  display: inline-block;
-  margin-left: 40px;
-}
-
-.main-nav li a:link,
-.main-nav li a:visited {
-  padding: 8px 0;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 90%;
-  border-bottom: 2px solid transparent;
-}
-
-.main-nav li a:hover,
-.main-nav li a:active {
-  border-bottom: 2px solid #e67e22;
-  transition: border-bottom 0.2s;
-}
-
-h1 {
-  margin: 0 0 20px 0;
-  color: #fff;
+.hello .header {
+  margin-bottom: 40px;
   font-size: 200%;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  word-spacing: 4px;
 }
 
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  padding: 10px 30px;
-  font-weight: 300;
+.hello .description {
+  line-height: 30px;
+  margin-bottom: 45px;
+}
+
+.hello .btn {
   text-decoration: none;
-  border-radius: 200px;
-  transition: background-color 0.2s, border 0.2s, color 0.2s;
-}
-
-.btn-full:link,
-.btn-full:visited {
-  background-color: #e67e22;
-  border: 1px solid #e67e22;
+  background-color: #6d56c1;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  border-radius: 25px;
   color: #fff;
-  margin-right: 15px;
 }
 
-.btn-ghost:link,
-.btn-ghost:visited {
-  border: 1px solid #e67e22;
-  color: #e67e22;
-}
-
-.btn:hover,
-.btn:active {
-  background-color: #cf6d17;
-}
-
-.btn-full:hover,
-.btn-full:active {
-  border: 1px solid #cf6d17;
-}
-
-.btn-ghost:hover,
-.btn-ghost:active {
-  border: 1px solid #cf6d17;
+.footer {
+  background: linear-gradient(
+    54deg,
+    rgba(74, 76, 179, 0.95) 34%,
+    hsla(0, 34%, 71%, 0.95)
+  );
   color: #fff;
+}
+
+.footer p {
+  font-size: 200%;
 }
